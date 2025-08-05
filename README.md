@@ -157,6 +157,7 @@ Use essas crendencias para acessar o phpMyAdmin
 
 1. **Usuário**: `root`
 2. **Senha:** `root`
+   
    ***Obs*: phpMyAdmin, para facilitar o acesso e a visualização dos dados.**
 
 ### Teste Manual (interface)
