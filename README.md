@@ -48,7 +48,11 @@ A seguir estão os principais diretórios/arquivos onde o CRUD está implementad
 | **Roteamento**                | `frontend/src/router/index.js`                       | Rotas SPA                                   |
 | **Integração API**          | `frontend/src/api/movieService.js`                   | Comunicação com a API Laravel             |
 
-## 🚀 **Passo a Passo para Execução**
+## **Passo a Passo para Execução**
+
+---
+
+
 
 ### 1. Clone o repositório
 
@@ -56,11 +60,19 @@ A seguir estão os principais diretórios/arquivos onde o CRUD está implementad
 https://github.com/JHugoSilva/tmdb-movies-app.git
 ```
 
+---
+
+
+
 ### 2. Acessar a pasta do projeto
 
 ```
 cd tmdb-movies-app/
 ```
+
+---
+
+
 
 ### 3. Configurar .env
 
@@ -68,9 +80,13 @@ cd tmdb-movies-app/
 cp backend/.env.example backend/.env
 ```
 
+---
+
+
+
 ### 4. Configurar conexão ao banco de dados
 
-###### *Editar .env* 
+###### *Editar .env*
 
 Conexões do banco de dados
 
@@ -83,56 +99,58 @@ DB_USERNAME=root
 DB_PASSWORD=root
 ```
 
-Como obter uma chave de API gratuita da TMDB (The Movie Database)
-Se você ainda não tem uma conta:
-Acesse: https://www.themoviedb.org/signup
 
-Preencha os dados: nome de usuário, e-mail e senha.
 
-Confirme o e-mail enviado pelo TMDB para ativar sua conta.
+---
 
-Faça login no site.
+### **Como obter uma chave de API gratuita da TMDB (The Movie Database)**
 
-No canto superior direito, clique na sua imagem de perfil e depois em "Editar Perfil".
+#### **Se você ainda não tem uma conta:**
 
-No menu lateral esquerdo, clique em "API".
+1. Acesse: [https://www.themoviedb.org/signup]()
+2. Preencha os dados:  **nome de usuário** , **e-mail** e  **senha** .
+3. Confirme o e-mail enviado pelo TMDB para ativar sua conta.
+4. Faça login no site.
+5. No canto superior direito, clique na sua imagem de perfil e depois em  **"Editar Perfil"** .
+6. No menu lateral esquerdo, clique em  **"API"** .
+7. Clique em  **"Solicitar uma chave de API"** .
+8. Na próxima tela, clique em **"Yes"** quando perguntado se você quer uma API key.
+9. Selecione a opção **"Developer"** (para uso pessoal, projetos ou aprendizado).
+10. Clique em  **"Subscribe"** .
+11. Preencha o formulário com os dados solicitados e envie.
+12. Após aprovado, você verá o link:  **"Access your API key details here"** .
+13. Clique nesse link e você verá sua  **chave de API (API Key v3 auth)** .
 
-Clique em "Solicitar uma chave de API".
+    Copie essa chave e use na sua aplicação.
 
-Na próxima tela, clique em "Yes" quando perguntado se você quer uma API key.
+---
 
-Selecione a opção "Developer" (para uso pessoal, projetos ou aprendizado).
+#### **Se você já tem uma conta:**
 
-Clique em "Subscribe".
+1. Acesse: [https://www.themoviedb.org/login]()
+2. Após o login, clique na sua imagem de perfil (canto superior direito).
+3. Vá em  **"Editar Perfil"** .
+4. No menu lateral, clique em  **"API"** .
+5. Siga os passos a partir do item **7** acima para solicitar a chave (caso ainda não tenha).
 
-Preencha o formulário com os dados solicitados e envie.
+---
 
-Após aprovado, você verá o link: "Access your API key details here".
-
-Clique nesse link e você verá sua chave de API (API Key v3 auth).
-Copie essa chave e use na sua aplicação.
-
-3. **Se já possuir conta**
-
-   Acesse as configurações da conta:
-
-   * Após fazer login, clique na sua imagem de perfil (canto superior direito) e vá até  **"Editar Perfil"** .
-   * No menu lateral, clique em  **"API"** .
-
-4. ****Configurar Chave e URL da API no arquivo .env do Laravel****
+### ****Configurar Chave e URL da API no arquivo .env do Laravel****
 
    **Adicione essas duas linhas no final do arquivo**
 
-   ```
+```
    TMDB_API_KEY=<adicione_sua_chave_aqui>
    TMDB_BASE_URL=https://api.themoviedb.org/3
 
-   ```
+```
 
 ---
 
 ### 6. Executar o BackEnd e FrontEnd com Makefile
+
   **Funcionalidades incluidas no Makefile**
+
 1. Corrigir permissões de pastas do Laravel
 2. Instalar dependências PHP com composer
 3. Gerar chave de app
@@ -149,6 +167,10 @@ Copie essa chave e use na sua aplicação.
 | `make down `           | Para containers                                                         |
 | `make clean`           | Remove tudo (containers, volumes e imagens)                             |
 
+---
+
+
+
 ### 7. Acesse a aplicação
 
 Verificar se a API esta funcionando acesse essa rota:
@@ -163,8 +185,9 @@ Use essas crendencias para acessar o phpMyAdmin
 
 1. **Usuário**: `root`
 2. **Senha:** `root`
-   
-   ***Obs*: phpMyAdmin, para facilitar o acesso e a visualização dos dados.**
+3. ***Obs*: phpMyAdmin, para facilitar o acesso e a visualização dos dados.**
+
+---
 
 ### Teste Manual (interface)
 
@@ -174,3 +197,5 @@ Use essas crendencias para acessar o phpMyAdmin
    Listar filmes da API TMDB e filtrar por título
 
    Favoritar filmes, salvar no banco de dados e filtrar por gênero
+
+---
