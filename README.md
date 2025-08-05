@@ -95,15 +95,13 @@ DB_PASSWORD=root
 | --------------------------------------------- | -------------------------------------------- |
 | [Clique Aqui](https://www.themoviedb.org/signup) | [Clique Aqui](https://www.themoviedb.org/login) |
 
+
 1. **1 Para criar conta gratuita**
 
    * Forneça um nome de usuário, e-mail e senha.
    * Confirme o e-mail enviado pelo TMDB.
-2. **Acesse as configurações da conta:**
 
-   * Após fazer login, clique na sua imagem de perfil (canto superior direito) e vá até  **"Editar Perfil"** .
-   * No menu lateral, clique em  **"API"** .
-3. **Solicite uma API Key:**
+2. **Primeiro acesso: Solicite uma API Key:**
 
    Clique na opção **Criar**
 
@@ -114,6 +112,11 @@ DB_PASSWORD=root
    Em seguida sera disponibilizado a opção , **Access you API key details heres**,
 
    apos clicar nesta opção sera disponibilizado um painel, nele tera a opção **Chave da API** copie ela e adicione a sua aplicação.
+
+   3. **Já possui conta: Acesse as configurações da conta:**
+
+   * Após fazer login, clique na sua imagem de perfil (canto superior direito) e vá até  **"Editar Perfil"** .
+   * No menu lateral, clique em  **"API"** .
 
    ****Configurar Chave e URL da API no arquivo .env do Laravel****
 
