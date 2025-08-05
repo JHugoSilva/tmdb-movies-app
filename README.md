@@ -141,11 +141,11 @@ DB_PASSWORD=root
 
 Verificar se a API esta funcionando acesse essa rota:
 
-[Rota para testar API](http://localhost:8088/api/ping)
+Clique aqui: [Rota para testar API](http://localhost:8088/api/ping)
 
 Acessa o banco de dados
 
-[Acessar o banco de dados](http://localhost:8081/index.php)
+Clique aqui: [Acessar o banco de dados](http://localhost:8081/index.php)
 
 Use essas crendencias
 
