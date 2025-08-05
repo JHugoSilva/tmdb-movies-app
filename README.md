@@ -70,7 +70,9 @@ cp backend/.env.example backend/.env
 
 ### 4. Configurar conexão ao banco de dados
 
-###### *Editar .env*Conexões do banco de dados
+###### *Editar .env* 
+
+Conexões do banco de dados
 
 ```
 DB_CONNECTION=mysql
