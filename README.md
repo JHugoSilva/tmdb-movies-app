@@ -74,7 +74,7 @@ cd tmdb-movies-app/
 
 
 
-### 3. Configurar .env
+### 3. Copiar .env
 
 ```
 cp backend/.env.example backend/.env
@@ -86,7 +86,7 @@ cp backend/.env.example backend/.env
 
 ### 4. Configurar conexão ao banco de dados
 
-###### *Editar .env*
+### **Editar .env**
 
 Conexões do banco de dados
 
