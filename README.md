@@ -132,7 +132,7 @@ DB_PASSWORD=root
 3. Gerar chave de app
 4. Subir containers e construir do zero
 5. Rodar migrations
-6. Comandos para executar Makefile conforme a necessidade:| Todas as configurações informadas a cima esta automatizadas no arquivo Makefile | segue a abaixo comandos para executar as rotinas que foram configuradas.
+6. Comandos para executar Makefile conforme a necessidade: Todas as configurações informadas a cima esta automatizadas no arquivo Makefile | segue a abaixo comandos para executar as rotinas que foram configuradas.
 
 | Comando                  | Descrição                                                             |
 | ------------------------ | ----------------------------------------------------------------------- |
