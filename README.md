@@ -156,6 +156,9 @@ Use essas crendencias
 ### Teste Manual (interface)
 
 1. Acesse o frontend: [Click Aqui](http://localhost:5177/)
+
 2. Você poderá:
+
    Listar filmes da API TMDB e filtrar por título
+   
    Favoritar filmes salvar no banco de dados e filtrar por gênero
