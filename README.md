@@ -103,10 +103,6 @@ DB_PASSWORD=root
 
 2. **Primeiro acesso: Solicite uma API Key:**
       Acesse as configurações da conta:
-
-     * Após fazer login, clique na sua imagem de perfil (canto superior direito) e vá até  **"Editar Perfil"** .
-     
-     Clique na opção **Criar**
   
      * Clique em **Yes,** escolha **Developer** e clique em **Subscribe**
   
