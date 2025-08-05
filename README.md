@@ -105,11 +105,11 @@ DB_PASSWORD=root
 
    Clique na opção **Criar**
   
-     Clique em **Yes,** escolha **Developer** e clique em **Subscribe**
+     * Clique em **Yes,** escolha **Developer** e clique em **Subscribe**
   
-     Preencha o formulario conforme solicitado e clique em **Subscribe**
+     * Preencha o formulario conforme solicitado e clique em **Subscribe**
   
-     Em seguida sera disponibilizado a opção , **Access you API key details heres**,
+     * Em seguida sera disponibilizado a opção , **Access you API key details heres**,
   
      apos clicar nesta opção sera disponibilizado um painel, nele tera a opção **Chave da API** copie ela e adicione a sua aplicação.
 
