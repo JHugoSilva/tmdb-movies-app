@@ -103,7 +103,7 @@ DB_PASSWORD=root
 
 2. **Primeiro acesso: Solicite uma API Key:**
 
-     Clique na opção **Criar**
+   Clique na opção **Criar**
   
      Clique em **Yes,** escolha **Developer** e clique em **Subscribe**
   
