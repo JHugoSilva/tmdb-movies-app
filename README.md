@@ -114,7 +114,9 @@ DB_PASSWORD=root
      apos clicar nesta opção sera disponibilizado um painel, nele tera a opção **Chave da API** copie ela e adicione a sua aplicação.
 
 3. **Se já possuir conta**
-  ##Acesse as configurações da conta:
+
+   Acesse as configurações da conta:
+
    * Após fazer login, clique na sua imagem de perfil (canto superior direito) e vá até  **"Editar Perfil"** .
    * No menu lateral, clique em  **"API"** .
 
