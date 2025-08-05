@@ -96,7 +96,7 @@ DB_PASSWORD=root
 | [Clique Aqui](https://www.themoviedb.org/signup) | [Clique Aqui](https://www.themoviedb.org/login) |
 
 
-1. **1 Para criar conta gratuita**
+1. **Para criar conta gratuita**
 
    * Forneça um nome de usuário, e-mail e senha.
    * Confirme o e-mail enviado pelo TMDB.
@@ -122,7 +122,7 @@ DB_PASSWORD=root
 
    ****Configurar Chave e URL da API no arquivo .env do Laravel****
 
-   **"Adicione essas duas linhas no final do arquivo"**
+4. **Adicione essas duas linhas no final do arquivo**
 
    ```
    TMDB_API_KEY=<adicione_sua_chave_aqui>
