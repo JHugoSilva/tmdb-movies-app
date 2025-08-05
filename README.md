@@ -132,7 +132,7 @@ DB_PASSWORD=root
 ---
 
 ### 6. Executar o BackEnd e FrontEnd com Makefile
-
+  **Funcionalidades incluidas no Makefile**
 1. Corrigir permissões de pastas do Laravel
 2. Instalar dependências PHP com composer
 3. Gerar chave de app
