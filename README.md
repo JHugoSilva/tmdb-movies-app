@@ -120,9 +120,9 @@ DB_PASSWORD=root
    * Após fazer login, clique na sua imagem de perfil (canto superior direito) e vá até  **"Editar Perfil"** .
    * No menu lateral, clique em  **"API"** .
 
-   ****Configurar Chave e URL da API no arquivo .env do Laravel****
+4. ****Configurar Chave e URL da API no arquivo .env do Laravel****
 
-4. **Adicione essas duas linhas no final do arquivo**
+   **Adicione essas duas linhas no final do arquivo**
 
    ```
    TMDB_API_KEY=<adicione_sua_chave_aqui>
