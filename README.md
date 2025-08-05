@@ -128,14 +128,14 @@ DB_PASSWORD=root
 5. Rodar migrations
 6. Comandos para executar Makefile conforme a necessidade:| Todas as configurações informadas a cima esta automatizadas no arquivo Makefile | segue a abaixo comandos para executar as rotinas que foram configuradas.
 
-| Comando                   | Descrição                                                             |
-| ------------------------- | ----------------------------------------------------------------------- |
-| `make setup`            | Sobe tudo (VueJs, banco de dados MySQL e o Laravel) e configura Laravel |
-| `make up`               | Sobe os containers e cria as imagens                                    |
-| `make migrate`          | Só roda migrations                                                     |
-| ` make migrate-refresh` | Apaga e constroi novamente as tabela migrations                        |
-| `make down `            | Para containers                                                         |
-| `make clean`            | Remove tudo (containers, volumes e imagens)                             |
+| Comando                  | Descrição                                                             |
+| ------------------------ | ----------------------------------------------------------------------- |
+| `make setup`           | Sobe tudo (VueJs, banco de dados MySQL e o Laravel) e configura Laravel |
+| `make up`              | Sobe os containers e cria as imagens                                    |
+| `make migrate`         | Só roda migrations                                                     |
+| `make migrate-refresh` | Apaga e constroi novamente as tabela migrations                        |
+| `make down `           | Para containers                                                         |
+| `make clean`           | Remove tudo (containers, volumes e imagens)                             |
 
 ### 6. Acesse a aplicação
 
@@ -147,23 +147,15 @@ Acessa o banco de dados
 
 [Acessar o banco de dados](http://localhost:8081/index.php)
 
-
 Use essas crendencias
 
 1. **Usuário**: `root`
 2. **Senha:** `root`
    ***Obs*: phpMyAdmin, para facilitar o acesso e a visualização dos dados.**
 
-Acessar o FrontEnd
+### Teste Manual (interface)
 
-[Click Aqui](http://localhost:5177/)
-
-### Como testar a aplicação
-
-#### 🖥️ Teste Manual (interface)
-
-1. Acesse o frontend: [http://localhost:5173](http://localhost:5173)
+1. Acesse o frontend: [Click Aqui](http://localhost:5177/)
 2. Você poderá:
-   * Cadastrar um novo filme
-   * Listar os filmes favoritos
-   * Editar ou excluir um filme existente
+   Listar filmes da API TMDB e filtrar por título
+   Favoritar filmes salvar no banco de dados e filtrar por gênero
