@@ -28,14 +28,16 @@ A seguir estão os principais diretórios/arquivos onde o CRUD está implementad
 
 #### Laravel (Backend)
 
-| Camada               | Caminho                                                    | Descrição                         |
-| -------------------- | ---------------------------------------------------------- | ----------------------------------- |
-| **Rotas**      | `routes/api.php`                                         | Define as rotas da API de filmes    |
-| **Controller** | `app/Http/Controllers/FilmeController.php`               | Controlador com a lógica do CRUD   |
-| **Model**      | `app/Models/Filme.php`                                   | Modelo do filme                     |
-| **Migration**  | `database/migrations/xxxx_xx_xx_create_filmes_table.php` | Criação da tabela `filmes`      |
-| **Seeder**     | `database/seeders/FilmeSeeder.php`                       | Popula o banco com dados de exemplo |
-| **Request**    | `app/Http/Requests/FilmeRequest.php` *(se houver)*     | Validação de dados                |
+| Método  | Rota                      | Controlador/Ação                    | Descrição                                    |
+| -------- | ------------------------- | ------------------------------------- | ---------------------------------------------- |
+| GET/HEAD | `/`                     | —                                    | Rota raiz da aplicação (sem implementação) |
+| GET/HEAD | `/api/ping`             | —                                    | Rota de teste de conectividade (ping)          |
+| GET/HEAD | `/api/movies`           | `MovieController@index`             | Lista filmes populares da API do TMDB          |
+| GET/HEAD | `/api/movies/search`    | `MovieController@searchTitle`       | Busca filmes por título via TMDB              |
+| GET/HEAD | `/api/favorites`        | `FavoriteMovieController@index`     | Lista todos os filmes favoritados              |
+| POST     | `/api/favorites`        | `FavoriteMovieController@store`     | Adiciona um filme aos favoritos                |
+| DELETE   | `/api/favorites/{id}`   | `FavoriteMovieController@destroy`   | Remove um filme dos favoritos (por ID)         |
+| GET/HEAD | `/api/favorites/genres` | `FavoriteMovieController@getGenres` | Lista os gêneros dos filmes favoritados       |
 
 #### Vue.js (Frontend)
 
@@ -51,13 +53,13 @@ A seguir estão os principais diretórios/arquivos onde o CRUD está implementad
 ### 1. Clone o repositório
 
 ```
-git clone https://github.com/JHugoSilva/tmdb-api.git
+https://github.com/JHugoSilva/tmdb-movies-app.git
 ```
 
 ### 2. Acessar a pasta do projeto
 
 ```
-cd tmdb-api/
+cd tmdb-movies-app/
 ```
 
 ### 3. Configurar .env
@@ -97,19 +99,23 @@ DB_PASSWORD=root
    * Confirme o e-mail enviado pelo TMDB.
 2. **Acesse as configurações da conta:**
 
-   * Após fazer login, clique na sua imagem de perfil (canto superior direito) e vá até  **"Configurações"** .
+   * Após fazer login, clique na sua imagem de perfil (canto superior direito) e vá até  **"Editar Perfil"** .
    * No menu lateral, clique em  **"API"** .
 3. **Solicite uma API Key:**
 
-   Escolha entre os tipos de chave:  **Developer** ,  **Personal** , ou  **Commercial** .
+   Clique na opção **Criar**
 
-   Preencha os dados solicitados (nome da aplicação, descrição, site — opcional para uso pessoal).
+   Clique em **Yes,** escolha **Developer** e clique em **Subscribe**
 
-   Clique em  **"Submit"** .
+   Preencha o formulario conforme solicitado e clique em **Subscribe**
 
-   **Configurar Chave e URL da API no arquivo .env do Laravel**
+   Em seguida sera disponibilizado a opção , **Access you API key details heres**,
 
-   "Adicione essas duas linhas no final do arquivo"
+   apos clicar nesta opção sera disponibilizado um painel, nele tera a opção **Chave da API** copie ela e adicione a sua aplicação.
+
+   ****Configurar Chave e URL da API no arquivo .env do Laravel****
+
+   **"Adicione essas duas linhas no final do arquivo"**
 
    ```
    TMDB_API_KEY=<adicione_sua_chave_aqui>
@@ -137,7 +143,7 @@ DB_PASSWORD=root
 | `make down `           | Para containers                                                         |
 | `make clean`           | Remove tudo (containers, volumes e imagens)                             |
 
-### 6. Acesse a aplicação
+### 7. Acesse a aplicação
 
 Verificar se a API esta funcionando acesse essa rota:
 
@@ -147,7 +153,7 @@ Acessa o banco de dados
 
 Clique aqui: [Acessar o banco de dados](http://localhost:8081/index.php)
 
-Use essas crendencias
+Use essas crendencias para acessar o phpMyAdmin
 
 1. **Usuário**: `root`
 2. **Senha:** `root`
@@ -156,9 +162,8 @@ Use essas crendencias
 ### Teste Manual (interface)
 
 1. Acesse o frontend: [Click Aqui](http://localhost:5177/)
-
 2. Você poderá:
 
    Listar filmes da API TMDB e filtrar por título
-   
-   Favoritar filmes salvar no banco de dados e filtrar por gênero
+
+   Favoritar filmes, salvar no banco de dados e filtrar por gênero
