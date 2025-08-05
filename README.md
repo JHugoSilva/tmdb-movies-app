@@ -102,8 +102,11 @@ DB_PASSWORD=root
    * Confirme o e-mail enviado pelo TMDB.
 
 2. **Primeiro acesso: Solicite uma API Key:**
+      Acesse as configurações da conta:
 
-   Clique na opção **Criar**
+     * Após fazer login, clique na sua imagem de perfil (canto superior direito) e vá até  **"Editar Perfil"** .
+     
+     Clique na opção **Criar**
   
      * Clique em **Yes,** escolha **Developer** e clique em **Subscribe**
   
