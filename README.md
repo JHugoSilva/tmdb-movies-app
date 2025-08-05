@@ -156,7 +156,7 @@ Clique aqui: [Rota para testar API](http://localhost:8088/api/ping)
 
 Acessa o banco de dados
 
-Clique aqui: [Acessar o banco de dados](http://localhost:8081/index.php)
+Clique aqui: [Acessar o banco de dados](http://localhost:8087/index.php)
 
 Use essas crendencias para acessar o phpMyAdmin
 
