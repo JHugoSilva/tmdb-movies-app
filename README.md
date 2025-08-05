@@ -83,34 +83,34 @@ DB_USERNAME=root
 DB_PASSWORD=root
 ```
 
-### **5. Como obter a chave da API do TMDB**
+Como obter uma chave de API gratuita da TMDB (The Movie Database)
+Se você ainda não tem uma conta:
+Acesse: https://www.themoviedb.org/signup
 
-###### **[Link oficial do TMDB](https://www.themoviedb.org)**
+Preencha os dados: nome de usuário, e-mail e senha.
 
----
+Confirme o e-mail enviado pelo TMDB para ativar sua conta.
 
-### Passos para criar a conta e gerar a chave da API:
+Faça login no site.
 
-| 1. Crie uma conta gratuita                    | Acesse sua conta caso já tenha cadastro     |
-| --------------------------------------------- | -------------------------------------------- |
-| [Clique Aqui](https://www.themoviedb.org/signup) | [Clique Aqui](https://www.themoviedb.org/login) |
+No canto superior direito, clique na sua imagem de perfil e depois em "Editar Perfil".
 
+No menu lateral esquerdo, clique em "API".
 
-1. **Para criar conta gratuita**
+Clique em "Solicitar uma chave de API".
 
-   * Forneça um nome de usuário, e-mail e senha.
-   * Confirme o e-mail enviado pelo TMDB.
+Na próxima tela, clique em "Yes" quando perguntado se você quer uma API key.
 
-2. **Primeiro acesso: Solicite uma API Key:**
-      Acesse as configurações da conta:
-  
-     * Clique em **Yes,** escolha **Developer** e clique em **Subscribe**
-  
-     * Preencha o formulario conforme solicitado e clique em **Subscribe**
-  
-     * Em seguida sera disponibilizado a opção , **Access you API key details heres**,
-  
-     apos clicar nesta opção sera disponibilizado um painel, nele tera a opção **Chave da API** copie ela e adicione a sua aplicação.
+Selecione a opção "Developer" (para uso pessoal, projetos ou aprendizado).
+
+Clique em "Subscribe".
+
+Preencha o formulário com os dados solicitados e envie.
+
+Após aprovado, você verá o link: "Access your API key details here".
+
+Clique nesse link e você verá sua chave de API (API Key v3 auth).
+Copie essa chave e use na sua aplicação.
 
 3. **Se já possuir conta**
 
