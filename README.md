@@ -50,7 +50,7 @@ A seguir estão os principais diretórios/arquivos onde o CRUD está implementad
 
 ## **Passo a Passo para Execução**
 
----
+----------------------------------------------------------------------------------------------------------------------------------------------
 
 ### 1. Clone o repositório
 
@@ -58,7 +58,7 @@ A seguir estão os principais diretórios/arquivos onde o CRUD está implementad
 https://github.com/JHugoSilva/tmdb-movies-app.git
 ```
 
----
+----------------------------------------------------------------------------------------------------------------------------------------------
 
 ### 2. Acessar a pasta do projeto
 
@@ -66,15 +66,15 @@ https://github.com/JHugoSilva/tmdb-movies-app.git
 cd tmdb-movies-app/
 ```
 
----
+---------------------------------------------------------------------------------------------------------------------------------------------
 
-### 3. Configurar .env
+### 3. Copiar .env
 
 ```
 cp backend/.env.example backend/.env
 ```
 
----
+---------------------------------------------------------------------------------------------------------------------------------------------
 
 ### 4. Configurar conexão ao banco de dados
 
@@ -91,7 +91,7 @@ DB_USERNAME=root
 DB_PASSWORD=root
 ```
 
----
+--------------------------------------------------------------------------------------------------------------------------------------------
 
 ### **Como obter uma chave de API gratuita da TMDB (The Movie Database)**
 
@@ -113,7 +113,7 @@ DB_PASSWORD=root
 
     Copie essa chave e use na sua aplicação.
 
----
+----------------------------------------------------------------------------------------------------------------------------------------------
 
 #### **Se você já tem uma conta:**
 
@@ -123,7 +123,7 @@ DB_PASSWORD=root
 4. No menu lateral, clique em  **"API"** .
 5. Siga os passos a partir do item **7** acima para solicitar a chave (caso ainda não tenha).
 
----
+----------------------------------------------------------------------------------------------------------------------------------------------
 
 ### ****Configurar Chave e URL da API no arquivo .env do Laravel****
 
@@ -135,7 +135,7 @@ DB_PASSWORD=root
 
 ```
 
----
+---------------------------------------------------------------------------------------------------------------------------------------------
 
 ### 6. Executar o BackEnd e FrontEnd com Makefile
 
@@ -161,7 +161,7 @@ Execução das migrations do banco de dados
 | `make down `           | Para todos os containers                                                   |
 | `make clean`           | Remove containers, volumes e imagens                                       |
 
-----------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------
 
 ### 7. Acessar a aplicação
 
@@ -182,7 +182,7 @@ Usuário: ```root```
 Senha: ```root```
 
 Obs: O phpMyAdmin é utilizado aqui para facilitar o acesso e visualização dos dados do banco de forma gráfica.
-------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------
 
 ##### Manual de Teste (Interface)
 
