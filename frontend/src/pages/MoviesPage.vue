@@ -71,7 +71,7 @@ const searchMovies = async (query) => {
   }
 }
 
-const handleAddFavorito = async(movie) => {
+const handleAddFavorite = async(movie) => {
   try {
     await movieService.addToFavorites(movie.id)
     movie.is_favorited = true
@@ -100,6 +100,6 @@ onMounted(() => {
 
 <template>
     <NavMovies @search="searchMovies"/>
-    <MoviesList :movies="movies" @add-favorito="handleAddFavorito"/>
+    <MoviesList :movies="movies" @add-favorito="handleAddFavorite"/>
     <FooterMovies/>
 </template>

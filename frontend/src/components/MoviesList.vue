@@ -1,10 +1,10 @@
 <script setup>
 const props = defineProps(["movies"]);
 
-const emit = defineEmits(["add-favorito"]);
+const emit = defineEmits(["add-favorite"]);
 
-const addFavorito = async (id) => {
-  emit("add-favorito", id);
+const addFavorite = async (id) => {
+  emit("add-favorite", id);
 };
 </script>
 <template>
@@ -59,7 +59,7 @@ const addFavorito = async (id) => {
 
         <!-- Botão compacto -->
         <button
-          @click="addFavorito(movie)"
+          @click="addFavorite(movie)"
           :disabled="movie.is_favorited"
           class="flex items-center justify-center w-full py-1.5 px-3 text-xs rounded-md transition-colors"
           :class="{
