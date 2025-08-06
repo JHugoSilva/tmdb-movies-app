@@ -168,12 +168,12 @@ Execução das migrations do banco de dados
 ##### Verificar se a API está funcionando
 Acesse a rota abaixo para testar se a API está operando corretamente:
 
-    Rota para testar API[http://localhost:8088/api/ping](http://localhost:8088/api/ping)
+Rota para testar API [http://localhost:8088/api/ping](http://localhost:8088/api/ping)
 
 Acessar o banco de dados via phpMyAdmin
 Acesse o phpMyAdmin pelo link abaixo:
 
-    Acessar o banco de dados[http://localhost:8087/index.php](http://localhost:8087/index.php)
+Acessar o banco de dados [http://localhost:8087/index.php](http://localhost:8087/index.php)
 
 Credenciais de acesso:
 
@@ -188,7 +188,7 @@ Obs: O phpMyAdmin é utilizado aqui para facilitar o acesso e visualização dos
 
 ##### Acesso ao Frontend
 
-    Clique aqui para acessar a interface[http://localhost:5177](http://localhost:5177)
+Clique aqui para acessar a interface [http://localhost:5177](http://localhost:5177)
 
 ##### Funcionalidades disponíveis para teste:
 
