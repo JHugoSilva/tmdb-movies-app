@@ -55,7 +55,7 @@ A seguir estão os principais diretórios/arquivos onde o CRUD está implementad
 ### 1. Clone o repositório
 
 ```
-https://github.com/JHugoSilva/tmdb-movies-app.git
+git clone https://github.com/JHugoSilva/tmdb-movies-app.git
 ```
 
 ----------------------------------------------------------------------------------------------------------------------------------------------
