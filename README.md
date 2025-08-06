@@ -163,22 +163,24 @@ Execução das migrations do banco de dados
 
 ---
 
-### 7. Acesse a aplicação
+✅ 7. Acessar a aplicação
+🔄 Verificar se a API está funcionando
+Acesse a rota abaixo para testar se a API está operando corretamente:
 
-Verificar se a API esta funcionando acesse essa rota:
+👉 Rota para testar API
 
-Clique aqui: [Rota para testar API](http://localhost:8088/api/ping)
+🗃️ Acessar o banco de dados via phpMyAdmin
+Acesse o phpMyAdmin pelo link abaixo:
 
-Acessa o banco de dados
+👉 Acessar o banco de dados
 
-Clique aqui: [Acessar o banco de dados](http://localhost:8087/index.php)
+Credenciais de acesso:
 
-Use essas crendencias para acessar o phpMyAdmin
+Usuário: root
 
-1. **Usuário**: `root`
-2. **Senha:** `root`
-3. ***Obs*: phpMyAdmin, para facilitar o acesso e a visualização dos dados.**
+Senha: root
 
+ℹ️ Obs: O phpMyAdmin é utilizado aqui para facilitar o acesso e visualização dos dados do banco de forma gráfica.
 ---
 
 ### Teste Manual (interface)
