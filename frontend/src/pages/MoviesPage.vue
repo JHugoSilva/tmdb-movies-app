@@ -100,6 +100,6 @@ onMounted(() => {
 
 <template>
     <NavMovies @search="searchMovies"/>
-    <MoviesList :movies="movies" @add-favorito="handleAddFavorite"/>
+    <MoviesList :movies="movies" @add-favorite="handleAddFavorite"/>
     <FooterMovies/>
 </template>
