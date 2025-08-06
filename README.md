@@ -183,13 +183,17 @@ Senha: root
 ℹ️ Obs: O phpMyAdmin é utilizado aqui para facilitar o acesso e visualização dos dados do banco de forma gráfica.
 ---
 
-### Teste Manual (interface)
+✅ Manual de Teste (Interface)
+🎬 Acesso ao Frontend
+👉 Clique aqui para acessar a interface (substitua o link com a URL real)
 
-1. Acesse o frontend: [Click Aqui](http://localhost:5177/)
-2. Você poderá:
+🧪 Funcionalidades disponíveis para teste:
+Listar filmes a partir da API do TMDB
 
-   Listar filmes da API TMDB e filtrar por título
+Filtrar filmes por título
 
-   Favoritar filmes, salvar no banco de dados e filtrar por gênero
+Favoritar filmes e salvá-los no banco de dados
+
+Filtrar filmes favoritados por gênero
 
 ---
