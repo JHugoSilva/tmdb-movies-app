@@ -52,8 +52,6 @@ A seguir estão os principais diretórios/arquivos onde o CRUD está implementad
 
 ---
 
-
-
 ### 1. Clone o repositório
 
 ```
@@ -61,8 +59,6 @@ https://github.com/JHugoSilva/tmdb-movies-app.git
 ```
 
 ---
-
-
 
 ### 2. Acessar a pasta do projeto
 
@@ -72,9 +68,7 @@ cd tmdb-movies-app/
 
 ---
 
-
-
-### 3. Copiar .env
+### 3. Configurar .env
 
 ```
 cp backend/.env.example backend/.env
@@ -82,11 +76,9 @@ cp backend/.env.example backend/.env
 
 ---
 
-
-
 ### 4. Configurar conexão ao banco de dados
 
-### **Editar .env**
+###### *Editar .env*
 
 Conexões do banco de dados
 
@@ -98,8 +90,6 @@ DB_DATABASE=tmdb_db
 DB_USERNAME=root
 DB_PASSWORD=root
 ```
-
-
 
 ---
 
@@ -149,27 +139,29 @@ DB_PASSWORD=root
 
 ### 6. Executar o BackEnd e FrontEnd com Makefile
 
-  **Funcionalidades incluidas no Makefile**
+**O projeto inclui um Makefile que automatiza a execução e configuração completa do ambiente de desenvolvimento.**
 
-1. Corrigir permissões de pastas do Laravel
-2. Instalar dependências PHP com composer
-3. Gerar chave de app
-4. Subir containers e construir do zero
-5. Rodar migrations
-6. Comandos para executar Makefile conforme a necessidade: Todas as configurações informadas a cima esta automatizadas no arquivo Makefile | segue a abaixo comandos para executar as rotinas que foram configuradas.
+**Funcionalidades incluídas no Makefile:**
+Correção de permissões das pastas do Laravel
 
-| Comando                  | Descrição                                                             |
-| ------------------------ | ----------------------------------------------------------------------- |
-| `make setup`           | Sobe tudo (VueJs, banco de dados MySQL e o Laravel) e configura Laravel |
-| `make up`              | Sobe os containers e cria as imagens                                    |
-| `make migrate`         | Só roda migrations                                                     |
-| `make migrate-refresh` | Apaga e constroi novamente as tabela migrations                        |
-| `make down `           | Para containers                                                         |
-| `make clean`           | Remove tudo (containers, volumes e imagens)                             |
+Instalação das dependências PHP com Composer
+
+Geração da chave da aplicação (APP_KEY)
+
+Subida e construção dos containers (Laravel, Vue.js e MySQL)
+
+Execução das migrations do banco de dados
+
+| Comando                  | Descrição                                                                |
+| ------------------------ | -------------------------------------------------------------------------- |
+| `make setup`           | Sobe todos os serviços (Vue.js, Laravel e MySQL) e configura o Laravel    |
+| `make up`              | Sobe os containers e cria as imagens (sem rodar migrations)                |
+| `make migrate`         | Executa apenas as migrations                                               |
+| `make migrate-refresh` | Apaga todas as tabelas e executa as migrations novamente (migrate:refresh) |
+| `make down `           | Para todos os containers                                                   |
+| `make clean`           | Remove containers, volumes e imagens                                       |
 
 ---
-
-
 
 ### 7. Acesse a aplicação
 
