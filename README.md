@@ -165,6 +165,7 @@ Execução das migrations do banco de dados
 | Etapa                                             | Comando                                                                                     |
 |---------------------------------------------------|----------------------------------------------------------------------------------------------|
 | **Subir containers**          | `docker-compose up -d`                                                                      |
+| **Subir containers e construir do zero (se necessário)**          | `docker-compose up -d --build`                                                                      |
 | **Instalar dependências PHP**                     | `docker-compose exec tmdb-app composer install`                                             |
 | **Corrigir permissões**                           | `docker exec tmdb-app sh -c "chown -R www-data:www-data /var/www/storage /var/www/bootstrap/cache && chmod -R 775 /var/www/storage /var/www/bootstrap/cache"` |
 | **Gerar chave da aplicação**                      | `docker-compose exec tmdb-app php artisan key:generate`                                     |
