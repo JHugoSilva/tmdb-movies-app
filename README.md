@@ -177,9 +177,9 @@ Acessar o banco de dados [http://localhost:8087/index.php](http://localhost:8087
 
 Credenciais de acesso:
 
-    Usuário: root
+Usuário: ```root```
 
-    Senha: root
+Senha: ```root```
 
 Obs: O phpMyAdmin é utilizado aqui para facilitar o acesso e visualização dos dados do banco de forma gráfica.
 ------------------------------------------------------------------------------------------------------------------
@@ -192,12 +192,12 @@ Clique aqui para acessar a interface [http://localhost:5177](http://localhost:51
 
 ##### Funcionalidades disponíveis para teste:
 
-    Listar filmes a partir da API do TMDB
+Listar filmes a partir da API do TMDB
 
-    Filtrar filmes por título
+Filtrar filmes por título
 
-    Favoritar filmes e salvá-los no banco de dados
+Favoritar filmes e salvá-los no banco de dados
 
-    Filtrar filmes favoritados por gênero
+Filtrar filmes favoritados por gênero
 
 ---
