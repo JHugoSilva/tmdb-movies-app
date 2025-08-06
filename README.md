@@ -130,9 +130,8 @@ DB_PASSWORD=root
    **Adicione essas duas linhas no final do arquivo**
 
 ```
-   TMDB_API_KEY=<adicione_sua_chave_aqui>
-   TMDB_BASE_URL=https://api.themoviedb.org/3
-
+TMDB_API_KEY=<adicione_sua_chave_aqui>
+TMDB_BASE_URL=https://api.themoviedb.org/3
 ```
 
 ---------------------------------------------------------------------------------------------------------------------------------------------
