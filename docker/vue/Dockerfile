@@ -8,7 +8,4 @@ COPY frontend/package*.json ./
 # Copia todo o frontend
 COPY frontend/ ./
 
-# Abre a porta usada pelo Vite (opcional)
-EXPOSE 5173
-
 CMD ["npm", "run", "dev", "--", "--host"]
