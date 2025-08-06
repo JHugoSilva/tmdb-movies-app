@@ -164,12 +164,12 @@ Execução das migrations do banco de dados
 
 | Etapa                                             | Comando                                                                                     |
 |---------------------------------------------------|----------------------------------------------------------------------------------------------|
-| **Subir containers e construir do zero**          | `docker-compose up -d`                                                                      |
+| **Subir containers**          | `docker-compose up -d`                                                                      |
 | **Instalar dependências PHP**                     | `docker-compose exec tmdb-app composer install`                                             |
 | **Corrigir permissões**                           | `docker exec tmdb-app sh -c "chown -R www-data:www-data /var/www/storage /var/www/bootstrap/cache && chmod -R 775 /var/www/storage /var/www/bootstrap/cache"` |
 | **Gerar chave da aplicação**                      | `docker-compose exec tmdb-app php artisan key:generate`                                     |
 | **Rodar migrações**                               | `docker-compose exec tmdb-app php artisan migrate`                                          |
-| **Rodar migrações do zero (recriar banco)**       | `docker-compose exec tmdb-app php artisan migrate:refresh`                                  |
+| **Rodar migrações do zero (se necessário)**       | `docker-compose exec tmdb-app php artisan migrate:refresh`                                  |
 | **Encerrar containers**                           | `docker-compose down`                                                                       |
 | **Limpar tudo (containers, volumes e imagens)**   | `docker-compose down --volumes --rmi all --remove-orphans`                                  |
 
