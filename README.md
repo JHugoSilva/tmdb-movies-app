@@ -160,7 +160,7 @@ Execução das migrations do banco de dados
 | `make down `           | Para todos os containers                                                   |
 | `make clean`           | Remove containers, volumes e imagens                                       |
 
-## 🐳 Caso prefira usar o Docker diretamente
+Caso prefira usar o Docker diretamente
 
 | Etapa                                             | Comando                                                                                     |
 |---------------------------------------------------|----------------------------------------------------------------------------------------------|
