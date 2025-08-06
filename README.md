@@ -2,12 +2,12 @@
 
 ### **Check List**
 
-* ✅ API com Laravel
-* ✅ Integração com banco de dados MySQL
-* ✅ Buscar filmes pelo nome usando na API do TMDB
-* ✅ Adicionar filmes aos favoritos, salvando os dados localmente
-* ✅ Listar filmes favoritos em uma tela dedicada, com filtro por gênero
-* ✅ Remover filmes da lista de favoritos
+* [X] API com Laravel
+* [X] Integração com banco de dados MySQL
+* [X] Buscar filmes pelo nome usando na API do TMDB
+* [X] Adicionar filmes aos favoritos, salvando os dados localmente
+* [X] Listar filmes favoritos em uma tela dedicada, com filtro por gênero
+* [X] Remover filmes da lista de favoritos
 
 ## **Pré-requisitos**
 
@@ -163,37 +163,41 @@ Execução das migrations do banco de dados
 
 ---
 
-✅ 7. Acessar a aplicação
-🔄 Verificar se a API está funcionando
+### 7. Acessar a aplicação
+
+##### Verificar se a API está funcionando
 Acesse a rota abaixo para testar se a API está operando corretamente:
 
-👉 Rota para testar API
+    Rota para testar API[http://localhost:8088/api/ping](http://localhost:8088/api/ping)
 
-🗃️ Acessar o banco de dados via phpMyAdmin
+Acessar o banco de dados via phpMyAdmin
 Acesse o phpMyAdmin pelo link abaixo:
 
-👉 Acessar o banco de dados
+    Acessar o banco de dados[http://localhost:8087/index.php](http://localhost:8087/index.php)
 
 Credenciais de acesso:
 
-Usuário: root
+    Usuário: root
 
-Senha: root
+    Senha: root
 
-ℹ️ Obs: O phpMyAdmin é utilizado aqui para facilitar o acesso e visualização dos dados do banco de forma gráfica.
----
+Obs: O phpMyAdmin é utilizado aqui para facilitar o acesso e visualização dos dados do banco de forma gráfica.
+------------------------------------------------------------------------------------------------------------------
 
-✅ Manual de Teste (Interface)
-🎬 Acesso ao Frontend
-👉 Clique aqui para acessar a interface (substitua o link com a URL real)
+##### Manual de Teste (Interface)
 
-🧪 Funcionalidades disponíveis para teste:
-Listar filmes a partir da API do TMDB
+##### Acesso ao Frontend
 
-Filtrar filmes por título
+    Clique aqui para acessar a interface[http://localhost:5177](http://localhost:5177)
 
-Favoritar filmes e salvá-los no banco de dados
+##### Funcionalidades disponíveis para teste:
 
-Filtrar filmes favoritados por gênero
+    Listar filmes a partir da API do TMDB
+
+    Filtrar filmes por título
+
+    Favoritar filmes e salvá-los no banco de dados
+
+    Filtrar filmes favoritados por gênero
 
 ---
