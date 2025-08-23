@@ -5,6 +5,7 @@ import NavMovies from '@/components/NavMovies.vue';
 import MoviesList from '@/components/MoviesList.vue';
 import FooterMovies from '@/components/FooterMovies.vue';
 import movieService from '@/api/movieService';
+import Loading from '@/component-base/Loading.vue';
 
 const movies = ref([])
 const favorites = ref([])
@@ -81,14 +82,19 @@ const handleAddFavorite = async(movie) => {
       title: 'Sucesso!',
       text: 'Filme adicionado aos favoritos!',
       icon: 'success',
-      confirmButtonText: 'OK'
+      confirmButtonText: 'OK',
+      scrollbarPadding: false,
+      willOpen: () => {
+        document.body.style.overflow = 'auto'; // força scroll normal
+      }
     })
   } catch (error) {
     console.error('Erro ao favoritar:', error)
     await Swal.fire({
       title: 'Erro!',
       text: 'Não foi possível favoritar o filme',
-      icon: 'error'
+      icon: 'error',
+       scrollbarPadding: false
     })
   }
 }
@@ -99,7 +105,8 @@ onMounted(() => {
 </script>
 
 <template>
-    <NavMovies @search="searchMovies"/>
+    <Loading :loading="isLoading"/>
+    <NavMovies @search="searchMovies" :isSearch="isSearching"/>
     <MoviesList :movies="movies" @add-favorite="handleAddFavorite"/>
     <FooterMovies/>
 </template>

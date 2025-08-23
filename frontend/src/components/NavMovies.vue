@@ -3,7 +3,7 @@ import { debounce } from "lodash";
 import { computed, ref } from "vue";
 import { useRoute } from "vue-router";
 
-const props = defineProps(["genres"]);
+const props = defineProps(["genres", "isSearch"]);
 const emit = defineEmits(["search", "filter"]);
 
 const route = useRoute();
@@ -59,7 +59,7 @@ const onFilter = () => {
               </router-link>
               <router-link
                 v-else
-                to="/"
+                to="/" replace
                 class="text-white bg-gradient-to-r from-teal-400 via-teal-500 to-teal-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-teal-300 dark:focus:ring-teal-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
               >
                 Filmes
@@ -90,19 +90,45 @@ const onFilter = () => {
                     placeholder="Buscar..."
                     class="block w-full ps-10 p-2 text-sm rounded-lg border bg-gray-50 border-gray-300 text-gray-900 focus:ring-blue-500 focus:border-blue-500"
                   />
+                  <div v-if="isSearch" class="absolute inset-y-0 right-3 flex items-center">
+                    <svg
+                      class="animate-spin h-5 w-5 text-gray-500"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                    >
+                      <circle
+                        class="opacity-25"
+                        cx="12"
+                        cy="12"
+                        r="10"
+                        stroke="currentColor"
+                        stroke-width="4"
+                      />
+                      <path
+                        class="opacity-75"
+                        fill="currentColor"
+                        d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"
+                      />
+                    </svg>
+                  </div>
                 </div>
               </template>
 
               <template v-else>
-              <div class="max-w-sm mx-auto">
-              <select v-model="selected"
-                  @change="onFilter" id="genre" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-                <option value="">Todos os Gêneros</option>
-                  <option v-for="(genre, index) in props.genres.data" :key="index" :value="genre">
-                    {{ genre }}
-                  </option>
-              </select>
-            </div>
+                <div class="max-w-sm mx-auto">
+                  <select
+                    v-model="selected"
+                    @change="onFilter"
+                    id="genre"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  >
+                    <option value="">Todos os Gêneros</option>
+                    <option v-for="(genre, index) in props.genres.data" :key="index" :value="genre">
+                      {{ genre }}
+                    </option>
+                  </select>
+                </div>
               </template>
             </li>
           </ul>
